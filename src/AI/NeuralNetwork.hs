@@ -4,6 +4,8 @@
 
 module AI.NeuralNetwork
     ( module AI.NeuralNetwork.ActivationFunctions
+    , Neuron, Layer, Network
+    , TrainingSample, TrainingSet
     , network
     , output
     , trainUntil, trainUntil'
