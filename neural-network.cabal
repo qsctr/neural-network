@@ -1,0 +1,27 @@
+name:                neural-network
+version:             0.1.0.0
+synopsis:            Feedforward artificial neural network
+description:         Feedforward artificial neural network
+homepage:            https://github.com/qsctr/neural-network
+license:             MIT
+license-file:        LICENSE
+author:              Bretton
+maintainer:          brettonchen@gmail.com
+copyright:           2017 Bretton
+category:            AI
+build-type:          Simple
+extra-source-files:  README.md
+cabal-version:       >=1.10
+
+library
+  hs-source-dirs:      src
+  exposed-modules:     AI.NeuralNetwork
+                     , AI.NeuralNetwork.ActivationFunctions
+  build-depends:       base >= 4.7 && < 5
+                     , random
+  default-language:    Haskell2010
+  ghc-options:         -Wall
+
+source-repository head
+  type:     git
+  location: https://github.com/qsctr/neural-network
